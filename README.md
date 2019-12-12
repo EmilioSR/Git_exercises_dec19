@@ -6,27 +6,64 @@ Haz un fork del siguiente repositorio, crea una rama llamada solución  y haz un
 Prepara el proyecto 'slideshow':
 
 	a) Crea un repositorio nuevo llamado slideshow.
+		$ git init slideshow
 	b) Extrae los ficheros que te ha proporcionado el profesor en dicho directorio.
+		$ unzip /home/estudiante/Git_exercises_dec19/slideshow_-master.zip
 	c) Crea un repositorio nuevo en github llamado slideshow.
 	d) Enlaza tu repositorio local con el repositorio remoto.
+		$ git remote add github https://github.com/EmilioSR/slideshow.git
 	e) Haz lo necesario para que todos los ficheros estén disponibles en el repositorio remoto.
+
+		$ git add .
+		$ git commit -m "Primer commit"
+		$ git push -u origin master
+
 	f) Crea un directorio en tu carpeta personal llamado proyectosGit.
+		$ mkdir ~/proyectosGit
 		
 ## Ejercicio 2 - Create working copies
 Crea dos copias del repositorio slideshow de github llamadas wc1 y wc2 dentro del directorio proyectosGit.
+
+`cp -r /home/estudiante/slideshow /home/estudiante/proyectoGit/wc1`
+
+`cp -r /home/estudiante/slideshow /home/estudiante/proyectoGit/wc2`
 
 ## Ejercicio 3 - Daily routine
 En el respositorio wc1:
 
 	a) Vamos a organizar los ficheros en carpetas.
 		- Mueve todas las imágenes a la carpeta pic (con el comando mv)
+
+			$mkdir pic
+			$mv b-public-72.jpg pic/
+			$mv logo1.png pic/
+
 		- Comprueba el estado del respositorio.
+
+			$git status
+
 		- Mueve todos los ficheros javascript, aquellos con extensión js, al directorio js.
+
+			$mkdir js
+			$mv *[.js] js/
+
 		- Comprueba el estado del repositorio.
+
+			$ git status
+
 	b) Indica las diferencias que encuentras entre mover los ficheros de una forma o de otra.
 	c) Añade los cambios al área de preparación.
+
+		$git add .
+
 	d) Comprueba el estado del repositorio.
+
+		$git status
+
 	e) Guarda los cambios.
+
+	
+
 	f) Comprueba el estado del repositorio.
 	g) Envía los cambios al repositorio remoto.
 	h) Añade un nuevo fichero logo5.html, copia el fichero logo.html en el fichero creado y cambia el tipo de rotación de la imagen ( en la primera fila de la tabla cambia right por left, es decir cambia las tres primera palabras right por left)

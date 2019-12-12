@@ -62,7 +62,7 @@ En el respositorio wc1:
 
 	e) Guarda los cambios.
 
-	
+
 
 	f) Comprueba el estado del repositorio.
 	g) Envía los cambios al repositorio remoto.
@@ -142,5 +142,8 @@ En wc1:
 ## Ejercicio 10
 
 	a) Añade un fichero remoto que contenga la dirección del repositorio remoto que has utilizado para los ejercicios.
+
+	https://github.com/EmilioSR/slideshow
+
 	b) Añade un fichero autoeval donde indiques como crees que has realizado estos ejercicios.
 	b) Haz un pull request.
